@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+    <listeners>
+    <listener class-name="com.liqvid.library.TestngListener" />
+	<listener class-name="com.liqvid.library.MyNXGTestListner">
+	</listener>
+ 	</listeners> 
+<!--     <test name="Installation" preserve-order="true">
+ <parameter name="browser" value="chrome" /> 
+    <classes>
+   		<class name="com.liqvid.installation.LiqvidInstallation"/>  
+   		<class name="com.liqvid.installation.AdminBasicTest"/>
+     </classes>
+   </test>  --> 
+    
+ <test name="Test regression" preserve-order="true">
+	 <parameter name="browser" value="firefox" /> 
+    <classes>
+ 	  <!--  <class name="com.liqvid.installation.AdminBasicTest"/> -->
+     	<!-- 	<class name="com.liqvid.installation.AdminBasicTest"/>
+ 	   	
+ 	   	<class name="com.liqvid.scripts.AdminPagelevelTest"/>
+	 	<class name="com.liqvid.scripts.AdminFunctionalTest"/>
+	 	<class name="com.liqvid.scripts.AdminPagelevelTest"/>
+	 	<class name="com.liqvid.scripts.StudentFunctionalTest"/>
+  	 	<class name="com.liqvid.scripts.StudentPageLevelTest"/>  
+	 	<class name="com.liqvid.scripts.TeacherFunctionalTest"/>
+	 	<class name="com.liqvid.scripts.TeacherPageLevelTest"/>  -->
+		<class name="com.liqvid.scripts.TeacherFunctionalTest"/>
+ 	</classes>
+   </test>
+</suite>

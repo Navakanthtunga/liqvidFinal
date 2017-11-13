@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <parameter name="browser" value="firefox"/>
+  <listeners>
+    <listener class-name="com.liqvid.library.TestngListener"/>
+    <listener class-name="com.liqvid.library.MyNXGTestListner"/>
+  </listeners>
+  <test name="Test regression">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.liqvid.scripts.TeacherFunctionalTest"/>
+    </classes>
+  </test> <!-- Test regression -->
+</suite> <!-- Failed suite [Suite] -->
